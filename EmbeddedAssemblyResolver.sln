@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmbeddedAssemblyResolver", "EmbeddedAssemblyResolver\EmbeddedAssemblyResolver.csproj", "{5BACAE9C-939F-4436-8B3B-0F863A377769}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyResolver-Demo", "AssemblyResolver-Demo\AssemblyResolver-Demo.csproj", "{B693220C-3BE6-4A6F-8EEE-6867749E865D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BACAE9C-939F-4436-8B3B-0F863A377769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BACAE9C-939F-4436-8B3B-0F863A377769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BACAE9C-939F-4436-8B3B-0F863A377769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BACAE9C-939F-4436-8B3B-0F863A377769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B693220C-3BE6-4A6F-8EEE-6867749E865D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B693220C-3BE6-4A6F-8EEE-6867749E865D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B693220C-3BE6-4A6F-8EEE-6867749E865D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B693220C-3BE6-4A6F-8EEE-6867749E865D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E97A14AC-8AB3-4A53-809D-2F1AB3338390}
+	EndGlobalSection
+EndGlobal
