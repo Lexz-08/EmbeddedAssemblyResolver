@@ -8,7 +8,7 @@ namespace EmbeddedAssemblyResolver
 	/// <summary>
 	/// Helps resolve dependency errors for embedded assemblies that do not exist as individual files on the device.
 	/// </summary>
-	public class AssemblyResolutionManager
+	public class AssemblyResolveManager
 	{
 		private static Dictionary<string, string> assemblies = new Dictionary<string, string>();
 
@@ -20,10 +20,10 @@ namespace EmbeddedAssemblyResolver
 		public static void AddAssembly(string AssemblyResourceName, string AssemblyResourcePath) => assemblies.Add(AssemblyResourceName, AssemblyResourcePath);
 
 		/// <summary>
-		/// Returns a <see cref="ResolveEventHandler"/> instance containing the event function that resolves the dependency errors of only the assemblies that are specified.
+		/// A <see cref="ResolveEventHandler"/> instance containing the event function that resolves the dependency errors of only the assemblies that are specified.
 		/// </summary>
 		/// <returns></returns>
-		public static ResolveEventHandler AssemblyErrorResolver() => (s, e) =>
+		public static ResolveEventHandler AssemblyErrorResolver => (s, e) =>
 		{
 			if (assemblies.Count == 0)
 				throw new InvalidOperationException("Cannot return assembly resolve handler because no assemblies to resolve were specified.");

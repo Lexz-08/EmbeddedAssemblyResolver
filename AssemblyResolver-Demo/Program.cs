@@ -15,9 +15,9 @@ namespace AssemblyResolver_Demo
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 
-			AssemblyResolutionManager.AddAssembly("ICSharpCode.TextEditor", "AssemblyResolver_Demo.Libraries.WinTitleBitmaps.dll");
-			AssemblyResolutionManager.AddAssembly("WinTitleBitmaps", "AssemblyResolver_Demo.Libraries.WinTitleBitmaps.dll");
-			AppDomain.CurrentDomain.AssemblyResolve += AssemblyResolutionManager.AssemblyErrorResolver();
+			AssemblyResolveManager.AddAssembly("ICSharpCode.TextEditor", "AssemblyResolver_Demo.Libraries.WinTitleBitmaps.dll");
+			AssemblyResolveManager.AddAssembly("WinTitleBitmaps", "AssemblyResolver_Demo.Libraries.WinTitleBitmaps.dll");
+			AppDomain.CurrentDomain.AssemblyResolve += AssemblyResolveManager.AssemblyErrorResolver;
 
 			Application.Run(new Form1());
 		}
